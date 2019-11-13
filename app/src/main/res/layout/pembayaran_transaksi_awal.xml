@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/abuGade">
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/id_transaksi"
+                    android:text="KODE TRANSAKSI"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/id_transaksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="TRX1234556"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="30dp"
+                    tools:background="@drawable/iphone_png" />
+
+                <TextView
+                    android:id="@+id/nama_barang"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    tools:text="IPHONE 7 PLUS"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/memori_barang"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    tools:text="3 GB/128 GB"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/warna_barang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="White"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/situs"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    tools:text="blibli.com"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/harga_bayar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    tools:text="Rp. 5.000.000"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btnSelesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:background="@color/hijauGade"
+                android:text="Bayar"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:layout_margin="16dp"/>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+</LinearLayout>
