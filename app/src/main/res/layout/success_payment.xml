@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/abuGade">
 
     <TextView
         android:layout_width="match_parent"
@@ -29,112 +30,124 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:cardCornerRadius="4dp">
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/hijauGade">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/hijauGade"
-        >
-
-        <ImageView
-            android:id="@+id/img_product"
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:background="@drawable/iphone"
-            android:layout_margin="0dp"/>
-
-        <TableLayout
-            android:layout_gravity="center_vertical"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="*">
+            android:padding="4dp">
 
-            <TableRow>
-                <TextView
-                    android:text="Kode Kredit"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
+            <TextView
+                android:layout_height="wrap_content"
+                tools:text="Harga Barang"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                />
 
-                <TextView
-                    android:id="@+id/kode_kredit"
-                    tools:text="TXR1243485345"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:text="Nama Barang"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
+            <TextView
+                android:id="@+id/harga_barang"
+                android:layout_height="wrap_content"
+                tools:text="Rp. 10.000.000"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                />
 
-                <TextView
-                    android:id="@+id/nama_barang"
-                    tools:text="Iphone XXX"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:text="Harga"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
-
-                <TextView
-                    android:id="@+id/harga"
-                    tools:text="Rp. 18.000.000"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:text="DP"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
-
-                <TextView
-                    android:id="@+id/dp"
-                    tools:text="Rp. 750.000/1.085 Gr"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:text="Jangka Waktu"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
-
-                <TextView
-                    android:id="@+id/jangka_waktu"
-                    tools:text="6 Bulan"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:layout_width="wrap_content"
-                    />
-            </TableRow>
-        </TableLayout>
-    </LinearLayout>
+        </LinearLayout>
     </android.support.v7.widget.CardView>
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Kode Kredit"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/kode_kredit"
+                android:layout_height="wrap_content"
+                tools:text="TXR1243485345"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:text="Tipe Transaksi"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tipe_transaksi"
+                android:layout_height="wrap_content"
+                tools:text="Pembelian"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:text="Angsuran"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/angsuran"
+                android:layout_height="wrap_content"
+                tools:text="Rp. 750.000"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:text="Uang Muka"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/uang_muka"
+                android:layout_height="wrap_content"
+                tools:text="Rp. 7.00.000"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
