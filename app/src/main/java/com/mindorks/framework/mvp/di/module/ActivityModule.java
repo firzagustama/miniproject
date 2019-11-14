@@ -38,6 +38,9 @@ import com.mindorks.framework.mvp.ui.feed.opensource.OpenSourceAdapter;
 import com.mindorks.framework.mvp.ui.feed.opensource.OpenSourceMvpPresenter;
 import com.mindorks.framework.mvp.ui.feed.opensource.OpenSourceMvpView;
 import com.mindorks.framework.mvp.ui.feed.opensource.OpenSourcePresenter;
+import com.mindorks.framework.mvp.ui.home.HomeMvpPresenter;
+import com.mindorks.framework.mvp.ui.home.HomeMvpView;
+import com.mindorks.framework.mvp.ui.home.HomePresenter;
 import com.mindorks.framework.mvp.ui.login.LoginMvpPresenter;
 import com.mindorks.framework.mvp.ui.login.LoginMvpView;
 import com.mindorks.framework.mvp.ui.login.LoginPresenter;
@@ -97,6 +100,13 @@ public class ActivityModule {
     @PerActivity
     SplashMvpPresenter<SplashMvpView> provideSplashPresenter(
             SplashPresenter<SplashMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    HomeMvpPresenter<HomeMvpView> provideHomePresenter(
+            HomePresenter<HomeMvpView> presenter) {
         return presenter;
     }
 

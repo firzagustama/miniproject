@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Pegadaian Digital"
+                android:textColor="@color/white" />
+        </android.support.design.widget.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.3"
+                android:background="@color/colorPrimary"
+                android:gravity="top">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/graph"/>
+<!--                <com.anychart.AnyChartView-->
+<!--                    android:id="@+id/any_chart"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"/>-->
+
+            </RelativeLayout>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="-35dp"
+                android:minHeight="80dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_profit" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="#28a745"
+                            android:textStyle="bold"
+                            android:text="Rp 7.020"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:textColor="@color/gray"
+                            android:textStyle="bold"
+                            android:text="Harga Jual"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1.1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray"
+                            android:textStyle="bold"
+                            android:text="10 Nov 2019" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray"
+                            android:text="Per 0.01 gram"
+                            android:textSize="13dp"
+                            android:layout_marginBottom="5dp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/ic_devaluation"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="#dc3545"
+                            android:textStyle="bold"
+                            android:text="Rp 6.800"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:textColor="@color/gray"
+                            android:textStyle="bold"
+                            android:text="Harga Beli"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.2"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_gold"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"
+                                android:textStyle="bold"
+                                android:paddingTop="24px"
+                                android:text="Emas"/>
+                        </LinearLayout>
+
+                    </android.support.design.card.MaterialCardView>
+
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_ring"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"
+                                android:textStyle="bold"
+                                android:paddingTop="24px"
+                                android:text="Gadai"/>
+                        </LinearLayout>
+
+                    </android.support.design.card.MaterialCardView>
+
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_shopping_bag"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"
+                                android:textStyle="bold"
+                                android:paddingTop="24px"
+                                android:text="Belanja"/>
+                        </LinearLayout>
+
+                    </android.support.design.card.MaterialCardView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_store"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"
+                                android:textStyle="bold"
+                                android:paddingTop="24px"
+                                android:text="Kreasi"/>
+                        </LinearLayout>
+
+                    </android.support.design.card.MaterialCardView>
+
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_golden"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"
+                                android:textStyle="bold"
+                                android:paddingTop="24px"
+                                android:text="Logam Mulia"/>
+                        </LinearLayout>
+
+                    </android.support.design.card.MaterialCardView>
+
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_payment_method"
+                                android:layout_gravity="center"
+                                android:tint="@color/colorPrimary"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:textColor="@color/gray"
+                                android:textStyle="bold"
+                                android:paddingTop="24px"
+                                android:text="Pembayaran"/>
+                        </LinearLayout>
+
+                    </android.support.design.card.MaterialCardView>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/iklan2"
+                    android:paddingVertical="20px"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+</FrameLayout>

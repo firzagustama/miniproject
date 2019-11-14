@@ -21,6 +21,7 @@ import com.mindorks.framework.mvp.ui.about.AboutFragment;
 import com.mindorks.framework.mvp.ui.feed.FeedActivity;
 import com.mindorks.framework.mvp.ui.feed.blogs.BlogFragment;
 import com.mindorks.framework.mvp.ui.feed.opensource.OpenSourceFragment;
+import com.mindorks.framework.mvp.ui.home.HomeActivity;
 import com.mindorks.framework.mvp.ui.login.LoginActivity;
 import com.mindorks.framework.mvp.ui.main.MainActivity;
 import com.mindorks.framework.mvp.ui.main.rating.RateUsDialog;
@@ -51,5 +52,7 @@ public interface ActivityComponent {
     void inject(BlogFragment fragment);
 
     void inject(RateUsDialog dialog);
+
+    void inject(HomeActivity activity);
 
 }

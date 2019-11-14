@@ -33,6 +33,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -43,7 +44,7 @@ task clean(type: Delete) {
 // Define versions in a single place
 ext {
     // Sdk and tools
-    minSdkVersion = 16
+    minSdkVersion = 28
     targetSdkVersion = 28
     compileSdkVersion = 28
     buildToolsVersion = '28.0.3'
@@ -64,6 +65,8 @@ ext {
     placeholderviewVersion = '0.6.1'
     debugDBVersion = '1.0.3'
     timberVersion = '4.5.1'
+    materialVersion = '28.0.0'
+    anyChartVersion = '1.1.2'
 
     //Test dependencies
     junitVersion = '4.12'

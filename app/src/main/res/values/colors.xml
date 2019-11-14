@@ -15,7 +15,7 @@
 
 <resources>
     <color name="abuGade">#eff1f8</color>
-    <color name="colorPrimary">@color/blue_black_light</color>
+    <color name="colorPrimary">#004e44</color>
     <color name="colorPrimaryDark">@color/black</color>
     <color name="colorAccent">#FF4081</color>
     <color name="light_gray">#dbdbdb</color>
