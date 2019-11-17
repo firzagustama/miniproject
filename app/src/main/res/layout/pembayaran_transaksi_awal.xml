@@ -56,7 +56,7 @@
                     android:id="@+id/nama_barang"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    tools:text="IPHONE 7 PLUS"
+                    tools:text="SAMSUNG S10 PRO MAX"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="20sp" />
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|bottom"
-                android:background="@color/hijauGade"
+                android:background="@drawable/corner_border_gade"
                 android:text="Pengajuan Kredit"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
