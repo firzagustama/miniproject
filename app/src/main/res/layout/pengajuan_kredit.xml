@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abuGade">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+         <ImageView
+             android:id="@+id/img_product"
+             android:background="@drawable/s10sample"
+             android:layout_width="50dp"
+             android:layout_height="100dp"
+             android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_transaksi"
+                tools:text="TRX3238584"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_toEndOf="@+id/img_product"
+                android:layout_toRightOf="@+id/img_product"
+                />
+
+            <TextView
+                android:id="@+id/nama_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_transaksi"
+                tools:text="SAMSUNG S10 PRO MAX"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_toEndOf="@+id/img_product"
+                android:layout_toRightOf="@+id/img_product"/>
+
+            <TextView
+                android:id="@+id/url_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_barang"
+                tools:text="https://www.blibli.com"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_toEndOf="@+id/img_product"
+                android:layout_toRightOf="@+id/img_product"/>
+
+            <TextView
+                android:id="@+id/label_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/url_barang"
+                android:text="Qty : "
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_toEndOf="@+id/img_product"
+                android:layout_toRightOf="@+id/img_product" />
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/label_qty"
+                android:layout_toRightOf="@+id/img_product"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                tools:text="1"
+                android:layout_below="@id/url_barang"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_qty"
+                android:id="@+id/harga_barang"
+                tools:text="Rp. 5.000.000"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_toEndOf="@+id/img_product"
+                android:layout_toRightOf="@+id/img_product"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/labelUangMuka"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:text="Silahkan Pilih Jumlah Uang Muka"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:id="@+id/containerDp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/labelUangMuka"
+            android:gravity="center_horizontal"
+            android:layout_margin="16dp"
+            >
+
+            <Button
+                android:id="@+id/btn15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15%"
+                android:background="@drawable/corner_border_gade"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btn25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:background="@drawable/corner_border_gade"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btn35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35%"
+                android:background="@drawable/corner_border_gade"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btn45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45%"
+                android:background="@drawable/corner_border_gade"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_below="@id/containerDp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#bbb"/>
+
+        <TextView
+            android:id="@+id/labelTenor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tenor"
+            android:textAlignment="center"
+            android:layout_below="@id/line1"/>
+
+        <LinearLayout
+            android:id="@+id/containerTenor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/labelTenor"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="3"
+                android:background="@drawable/corner_border_gade"
+                />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="6"
+                android:background="@drawable/corner_border_gade"
+                />
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="12"
+                android:background="@drawable/corner_border_gade"
+                />
+
+            <Button
+                android:id="@+id/btn18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="18"
+                android:background="@drawable/corner_border_gade"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_below="@id/containerTenor"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:background="#bbb"/>
+
+        <TableLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/line2"
+            android:stretchColumns="*"
+            >
+            <TableRow>
+                <TextView
+                    android:layout_width="68dp"
+                    android:text="Jumlah Uang Muka"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/jumlah_dp"
+                    tools:text="Rp. 5.000.000"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="68dp"
+                    android:text="Jumlah Angsuran"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/jumlah_angsuran"
+                    tools:text="Rp. 5.00.000"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/corner_border_gade"
+            android:text="Pengajuan Kredit"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</LinearLayout>
