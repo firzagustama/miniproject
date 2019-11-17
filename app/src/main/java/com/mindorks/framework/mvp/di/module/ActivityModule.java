@@ -26,6 +26,12 @@ import com.mindorks.framework.mvp.di.PerActivity;
 import com.mindorks.framework.mvp.ui.about.AboutMvpPresenter;
 import com.mindorks.framework.mvp.ui.about.AboutMvpView;
 import com.mindorks.framework.mvp.ui.about.AboutPresenter;
+import com.mindorks.framework.mvp.ui.angsuran.AngsuranMvpPresenter;
+import com.mindorks.framework.mvp.ui.angsuran.AngsuranMvpView;
+import com.mindorks.framework.mvp.ui.angsuran.AngsuranPresenter;
+import com.mindorks.framework.mvp.ui.belanja.BelanjaMvpPresenter;
+import com.mindorks.framework.mvp.ui.belanja.BelanjaMvpView;
+import com.mindorks.framework.mvp.ui.belanja.BelanjaPresenter;
 import com.mindorks.framework.mvp.ui.feed.FeedMvpPresenter;
 import com.mindorks.framework.mvp.ui.feed.FeedMvpView;
 import com.mindorks.framework.mvp.ui.feed.FeedPagerAdapter;
@@ -50,9 +56,24 @@ import com.mindorks.framework.mvp.ui.main.MainPresenter;
 import com.mindorks.framework.mvp.ui.main.rating.RatingDialogMvpPresenter;
 import com.mindorks.framework.mvp.ui.main.rating.RatingDialogMvpView;
 import com.mindorks.framework.mvp.ui.main.rating.RatingDialogPresenter;
+import com.mindorks.framework.mvp.ui.metode.MetodeMvpPresenter;
+import com.mindorks.framework.mvp.ui.metode.MetodeMvpView;
+import com.mindorks.framework.mvp.ui.metode.MetodePresenter;
+import com.mindorks.framework.mvp.ui.pembayaran.PembayaranMvpPresenter;
+import com.mindorks.framework.mvp.ui.pembayaran.PembayaranMvpView;
+import com.mindorks.framework.mvp.ui.pembayaran.PembayaranPresenter;
+import com.mindorks.framework.mvp.ui.pin.PinMvpPresenter;
+import com.mindorks.framework.mvp.ui.pin.PinMvpView;
+import com.mindorks.framework.mvp.ui.pin.PinPresenter;
 import com.mindorks.framework.mvp.ui.splash.SplashMvpPresenter;
 import com.mindorks.framework.mvp.ui.splash.SplashMvpView;
 import com.mindorks.framework.mvp.ui.splash.SplashPresenter;
+import com.mindorks.framework.mvp.ui.sukses.SuksesMvpPresenter;
+import com.mindorks.framework.mvp.ui.sukses.SuksesMvpView;
+import com.mindorks.framework.mvp.ui.sukses.SuksesPresenter;
+import com.mindorks.framework.mvp.ui.tagihan.TagihanMvpPresenter;
+import com.mindorks.framework.mvp.ui.tagihan.TagihanMvpView;
+import com.mindorks.framework.mvp.ui.tagihan.TagihanPresenter;
 import com.mindorks.framework.mvp.utils.rx.AppSchedulerProvider;
 import com.mindorks.framework.mvp.utils.rx.SchedulerProvider;
 
@@ -107,6 +128,55 @@ public class ActivityModule {
     @PerActivity
     HomeMvpPresenter<HomeMvpView> provideHomePresenter(
             HomePresenter<HomeMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    BelanjaMvpPresenter<BelanjaMvpView> provideBelanjaPresenter(
+            BelanjaPresenter<BelanjaMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    PembayaranMvpPresenter<PembayaranMvpView> providePembayaranPresenter(
+            PembayaranPresenter<PembayaranMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    AngsuranMvpPresenter<AngsuranMvpView> provideAngsuranPresenter(
+            AngsuranPresenter<AngsuranMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    TagihanMvpPresenter<TagihanMvpView> provideTagihanPresenter(
+            TagihanPresenter<TagihanMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    PinMvpPresenter<PinMvpView> providePinPresenter(
+            PinPresenter<PinMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    SuksesMvpPresenter<SuksesMvpView> provideSuksesPresenter(
+            SuksesPresenter<SuksesMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    MetodeMvpPresenter<MetodeMvpView> provideMetodePresenter(
+            MetodePresenter<MetodeMvpView> presenter) {
         return presenter;
     }
 

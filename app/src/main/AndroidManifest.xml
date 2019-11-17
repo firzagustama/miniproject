@@ -11,7 +11,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.home.HomeActivity"></activity>
+        <activity android:name=".ui.metode.MetodeActivity"/>
+        <activity android:name=".ui.sukses.SuksesActivity" />
+        <activity android:name=".ui.pin.PinActivity" />
+        <activity android:name=".ui.tagihan.TagihanActivity" />
 
         <service android:name=".service.SyncService" />
 
@@ -32,6 +35,22 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.main.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.angsuran.AngsuranActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pembayaran.PembayaranActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.belanja.BelanjaActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.HomeActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity

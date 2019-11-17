@@ -18,6 +18,8 @@ package com.mindorks.framework.mvp.di.component;
 import com.mindorks.framework.mvp.di.PerActivity;
 import com.mindorks.framework.mvp.di.module.ActivityModule;
 import com.mindorks.framework.mvp.ui.about.AboutFragment;
+import com.mindorks.framework.mvp.ui.angsuran.AngsuranActivity;
+import com.mindorks.framework.mvp.ui.belanja.BelanjaActivity;
 import com.mindorks.framework.mvp.ui.feed.FeedActivity;
 import com.mindorks.framework.mvp.ui.feed.blogs.BlogFragment;
 import com.mindorks.framework.mvp.ui.feed.opensource.OpenSourceFragment;
@@ -25,7 +27,12 @@ import com.mindorks.framework.mvp.ui.home.HomeActivity;
 import com.mindorks.framework.mvp.ui.login.LoginActivity;
 import com.mindorks.framework.mvp.ui.main.MainActivity;
 import com.mindorks.framework.mvp.ui.main.rating.RateUsDialog;
+import com.mindorks.framework.mvp.ui.metode.MetodeActivity;
+import com.mindorks.framework.mvp.ui.pembayaran.PembayaranActivity;
+import com.mindorks.framework.mvp.ui.pin.PinActivity;
 import com.mindorks.framework.mvp.ui.splash.SplashActivity;
+import com.mindorks.framework.mvp.ui.sukses.SuksesActivity;
+import com.mindorks.framework.mvp.ui.tagihan.TagihanActivity;
 
 import dagger.Component;
 
@@ -54,5 +61,19 @@ public interface ActivityComponent {
     void inject(RateUsDialog dialog);
 
     void inject(HomeActivity activity);
+
+    void inject(BelanjaActivity activity);
+
+    void inject(PembayaranActivity activity);
+
+    void inject(AngsuranActivity activity);
+
+    void inject(TagihanActivity activity);
+
+    void inject(PinActivity activity);
+
+    void inject(SuksesActivity activity);
+
+    void inject(MetodeActivity activity);
 
 }

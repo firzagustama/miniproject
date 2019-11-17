@@ -6,6 +6,7 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 import com.anychart.AnyChart;
 import com.anychart.AnyChartView;
@@ -16,8 +17,11 @@ import com.mindorks.framework.mvp.ui.base.BaseActivity;
 
 import android.content.Intent;
 import android.content.Context;
+import android.support.design.card.MaterialCardView;
 
 import com.mindorks.framework.mvp.R;
+import com.mindorks.framework.mvp.ui.belanja.BelanjaActivity;
+import com.mindorks.framework.mvp.ui.pembayaran.PembayaranActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,5 +71,17 @@ public class HomeActivity extends BaseActivity implements HomeMvpView {
 //        cartesian.data(data);
 //
 //        anyChartView.setChart(cartesian);
+    }
+
+    @OnClick(R.id.belanja_card)
+    protected void openBelanjaActivity() {
+        Intent intent = BelanjaActivity.getStartIntent(HomeActivity.this);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.pembayaran_card)
+    protected void openPembayaranActivity() {
+        Intent intent = PembayaranActivity.getStartIntent(HomeActivity.this);
+        startActivity(intent);
     }
 }

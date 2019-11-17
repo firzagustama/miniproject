@@ -224,6 +224,7 @@
                     </android.support.design.card.MaterialCardView>
 
                     <android.support.design.card.MaterialCardView
+                        android:id="@+id/belanja_card"
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_alignParentRight="true"
@@ -323,6 +324,7 @@
                     </android.support.design.card.MaterialCardView>
 
                     <android.support.design.card.MaterialCardView
+                        android:id="@+id/pembayaran_card"
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_alignParentRight="true"
@@ -336,11 +338,11 @@
                             android:layout_gravity="center">
 
                             <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/ic_payment_method"
+                                android:layout_width="42dp"
+                                android:layout_height="49dp"
                                 android:layout_gravity="center"
-                                android:tint="@color/colorPrimary"/>
+                                android:src="@drawable/ic_payment_method"
+                                android:tint="@color/colorPrimary" />
 
                             <TextView
                                 android:layout_width="match_parent"

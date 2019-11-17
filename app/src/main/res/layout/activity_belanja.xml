@@ -60,7 +60,7 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_margin="16dp">
 
-            <androidx.viewpager.widget.PagerTabStrip
+            <android.support.v4.view.PagerTabStrip
                 android:id="@+id/pager_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
