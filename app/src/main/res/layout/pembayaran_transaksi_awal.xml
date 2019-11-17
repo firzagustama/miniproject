@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|bottom"
                 android:background="@color/hijauGade"
-                android:text="Bayar"
+                android:text="Pengajuan Kredit"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:layout_margin="16dp"/>
