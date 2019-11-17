@@ -12,7 +12,7 @@ import java.util.List;
 
 public class BelanjaAdapter extends FragmentPagerAdapter {
 
-    final List<String> tabTitle = new ArrayList<>();
+    final String[] tabTitle = {"Riwayat", "Tagihan"};
 
     public BelanjaAdapter(FragmentManager fm) {
         super(fm);
@@ -32,6 +32,6 @@ public class BelanjaAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return tabTitle.size();
+        return tabTitle.length;
     }
 }

@@ -6,6 +6,7 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 import com.mindorks.framework.mvp.ui.base.BaseActivity;
 
@@ -15,6 +16,7 @@ import android.support.v4.view.ViewPager;
 import android.widget.ImageView;
 
 import com.mindorks.framework.mvp.R;
+import com.mindorks.framework.mvp.ui.kredit.KreditActivity;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
@@ -72,5 +74,11 @@ public class BelanjaActivity extends BaseActivity implements BelanjaMvpView, Ima
     @Override
     public void setImageForPosition(int position, ImageView imageView) {
         imageView.setImageResource(sampleImages.get(position));
+    }
+
+    @OnClick(R.id.btnBayar)
+    public void openKreditActivity() {
+        Intent intent = KreditActivity.getStartIntent(this);
+        startActivity(intent);
     }
 }

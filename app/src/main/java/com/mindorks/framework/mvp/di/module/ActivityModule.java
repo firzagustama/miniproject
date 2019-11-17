@@ -47,6 +47,9 @@ import com.mindorks.framework.mvp.ui.feed.opensource.OpenSourcePresenter;
 import com.mindorks.framework.mvp.ui.home.HomeMvpPresenter;
 import com.mindorks.framework.mvp.ui.home.HomeMvpView;
 import com.mindorks.framework.mvp.ui.home.HomePresenter;
+import com.mindorks.framework.mvp.ui.kredit.KreditMvpPresenter;
+import com.mindorks.framework.mvp.ui.kredit.KreditMvpView;
+import com.mindorks.framework.mvp.ui.kredit.KreditPresenter;
 import com.mindorks.framework.mvp.ui.login.LoginMvpPresenter;
 import com.mindorks.framework.mvp.ui.login.LoginMvpView;
 import com.mindorks.framework.mvp.ui.login.LoginPresenter;
@@ -62,9 +65,15 @@ import com.mindorks.framework.mvp.ui.metode.MetodePresenter;
 import com.mindorks.framework.mvp.ui.pembayaran.PembayaranMvpPresenter;
 import com.mindorks.framework.mvp.ui.pembayaran.PembayaranMvpView;
 import com.mindorks.framework.mvp.ui.pembayaran.PembayaranPresenter;
+import com.mindorks.framework.mvp.ui.pengajuan.PengajuanMvpPresenter;
+import com.mindorks.framework.mvp.ui.pengajuan.PengajuanMvpView;
+import com.mindorks.framework.mvp.ui.pengajuan.PengajuanPresenter;
 import com.mindorks.framework.mvp.ui.pin.PinMvpPresenter;
 import com.mindorks.framework.mvp.ui.pin.PinMvpView;
 import com.mindorks.framework.mvp.ui.pin.PinPresenter;
+import com.mindorks.framework.mvp.ui.rincian.RincianMvpPresenter;
+import com.mindorks.framework.mvp.ui.rincian.RincianMvpView;
+import com.mindorks.framework.mvp.ui.rincian.RincianPresenter;
 import com.mindorks.framework.mvp.ui.splash.SplashMvpPresenter;
 import com.mindorks.framework.mvp.ui.splash.SplashMvpView;
 import com.mindorks.framework.mvp.ui.splash.SplashPresenter;
@@ -177,6 +186,27 @@ public class ActivityModule {
     @PerActivity
     MetodeMvpPresenter<MetodeMvpView> provideMetodePresenter(
             MetodePresenter<MetodeMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    KreditMvpPresenter<KreditMvpView> provideKreditPresenter(
+            KreditPresenter<KreditMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    RincianMvpPresenter<RincianMvpView> provideRincianPresenter(
+            RincianPresenter<RincianMvpView> presenter) {
+        return presenter;
+    }
+
+    @Provides
+    @PerActivity
+    PengajuanMvpPresenter<PengajuanMvpView> providePengajuanPresenter(
+            PengajuanPresenter<PengajuanMvpView> presenter) {
         return presenter;
     }
 

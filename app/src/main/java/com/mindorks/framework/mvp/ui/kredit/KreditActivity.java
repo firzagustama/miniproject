@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvp.ui.pin;
+package com.mindorks.framework.mvp.ui.kredit;
 
 import android.os.Bundle;
 
@@ -13,30 +13,27 @@ import android.content.Intent;
 import android.content.Context;
 
 import com.mindorks.framework.mvp.R;
-import com.mindorks.framework.mvp.ui.sukses.SuksesActivity;
+import com.mindorks.framework.mvp.ui.pengajuan.PengajuanActivity;
+import com.mindorks.framework.mvp.ui.rincian.RincianActivity;
 
-public class PinActivity extends BaseActivity implements PinMvpView {
+public class KreditActivity extends BaseActivity implements KreditMvpView {
 
     @Inject
-    PinPresenter<PinMvpView> mPresenter;
-
-    Boolean isKredit;
+    KreditPresenter<KreditMvpView> mPresenter;
 
     public static Intent getStartIntent(Context context) {
-        Intent intent = new Intent(context, PinActivity.class);
+        Intent intent = new Intent(context, KreditActivity.class);
         return intent;
     }
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pin);
+        setContentView(R.layout.activity_kredit);
 
         getActivityComponent().inject(this);
         setUnBinder(ButterKnife.bind(this));
-        mPresenter.onAttach(PinActivity.this);
-
-        setUp();
+        mPresenter.onAttach(KreditActivity.this);
     }
 
     @Override
@@ -47,14 +44,12 @@ public class PinActivity extends BaseActivity implements PinMvpView {
 
     @Override
     protected void setUp() {
-        isKredit = getIntent().getBooleanExtra("kredit", false);
+
     }
 
-    @OnClick(R.id.btnBayar)
-    protected void openSuksesActivity() {
-        Intent intent = SuksesActivity.getStartIntent(this);
-        intent.putExtra("kredit", isKredit);
+    @OnClick(R.id.btnAjukan)
+    protected void openPengajuanActivity() {
+        Intent intent = PengajuanActivity.getStartIntent(this);
         startActivity(intent);
-        finish();
     }
 }

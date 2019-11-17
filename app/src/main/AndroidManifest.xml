@@ -11,7 +11,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.metode.MetodeActivity"/>
+        <activity android:name=".ui.pengajuan.PengajuanActivity"></activity>
+        <activity android:name=".ui.rincian.RincianActivity" />
+        <activity android:name=".ui.kredit.KreditActivity" />
+        <activity android:name=".ui.metode.MetodeActivity" />
         <activity android:name=".ui.sukses.SuksesActivity" />
         <activity android:name=".ui.pin.PinActivity" />
         <activity android:name=".ui.tagihan.TagihanActivity" />
