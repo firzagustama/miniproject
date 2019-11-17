@@ -191,7 +191,7 @@
 
             <Button
                 android:id="@+id/btn3"
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:text="3"
@@ -200,7 +200,7 @@
 
             <Button
                 android:id="@+id/btn6"
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:text="6"
@@ -209,7 +209,7 @@
 
             <Button
                 android:id="@+id/btn12"
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:text="12"
@@ -218,10 +218,19 @@
 
             <Button
                 android:id="@+id/btn18"
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:text="18"
+                android:background="@drawable/corner_border_gade"
+                />
+
+            <Button
+                android:id="@+id/btn24"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="24"
                 android:background="@drawable/corner_border_gade"
                 />
 
