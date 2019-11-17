@@ -159,7 +159,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="@color/hijauGade"
+            android:background="@drawable/corner_border_gade"
             android:text="Selesai"
             android:textStyle="bold"
             android:textAlignment="center"
