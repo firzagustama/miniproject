@@ -23,7 +23,7 @@
                 android:id="@+id/status_transaksi"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                tools:text="Pembayaran Selanjutnya"
+                android:text="Pembayaran Selanjutnya"
                 android:textAlignment="textEnd"
                 android:layout_gravity="end"
                 android:textSize="18sp"
@@ -34,7 +34,7 @@
                 android:id="@+id/nama_barang"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                tools:text="IPHONE X"
+                android:text="IPHONE X"
                 android:textSize="18sp"
                 android:textColor="@android:color/black"/>
 
@@ -42,7 +42,7 @@
                 android:id="@+id/tanggal_transaksi"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                tools:text="12/12/2019"
+                android:text="12/12/2019"
                 android:textAlignment="textEnd"
                 android:layout_gravity="end"
                 android:textSize="18sp"
@@ -53,7 +53,7 @@
                 android:id="@+id/total_tagihan"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                tools:text="TRX123456"
+                android:text="TRX123456"
                 android:textSize="18sp"
                 android:textColor="@android:color/black"/>
 
@@ -61,7 +61,7 @@
                 android:id="@+id/jumlah_angsuran"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                tools:text="Pembayaran Selanjutnya"
+                android:text="Pembayaran Selanjutnya"
                 android:textAlignment="textEnd"
                 android:layout_gravity="end"
                 android:textSize="18sp"

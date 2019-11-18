@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pembayaran.PembayaranActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_layout"
+    android:weightSum="12">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+    </android.support.v7.widget.Toolbar>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:padding="5dp">
+
+        <android.support.design.card.MaterialCardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_gold_ingots"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tabungan Emas"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_cash"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gadai"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_debit_card"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angsuran"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_smartphone"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pulsa"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/bpjs"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BPJS"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/pln"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PLN"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_drop"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PDAM"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/telkom"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telkom"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/angsuran_card"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_bags"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angsuran Belanja"
+                        android:textAlignment="center"
+                        android:textSize="13dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ui.pembayaran.PembayaranActivity"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="#f0f0f0">-->
+
+<!--    <android.support.design.widget.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/activity_vertical_margin"-->
+<!--        android:background="@color/colorPrimary">-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:text="Pembayaran"-->
+<!--            android:textColor="@color/white" />-->
+<!--    </android.support.design.widget.AppBarLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="10dp">-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_gold_ingots"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="Tabungan Emas"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_cash"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="Gadai"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginRight="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_debit_card"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="Angsuran"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+<!--    </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp">-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_smartphone"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="Pulsa"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/bpjs"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="BPJS"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginRight="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/pln"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="PLN"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+<!--    </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp">-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_drop"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="PDAM"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/telkom"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="Telkom"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+
+<!--        <android.support.design.card.MaterialCardView-->
+<!--            android:id="@+id/angsuran_card"-->
+<!--            android:layout_width="125dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginRight="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/ic_bags"-->
+<!--                    android:layout_gravity="center"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingTop="24px"-->
+<!--                    android:text="Angsuran Belanja"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </android.support.design.card.MaterialCardView>-->
+<!--    </RelativeLayout>-->
+
+<!--</LinearLayout>-->

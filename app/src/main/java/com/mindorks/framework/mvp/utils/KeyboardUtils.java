@@ -15,8 +15,8 @@
 
 package com.mindorks.framework.mvp.utils;
 
-import android.app.Activity;
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -31,11 +31,11 @@ public final class KeyboardUtils {
         // This utility class is not publicly instantiable
     }
 
-    public static void hideSoftInput(Activity activity) {
+    public static void hideSoftInput(AppCompatActivity activity) {
         View view = activity.getCurrentFocus();
         if (view == null) view = new View(activity);
         InputMethodManager imm = (InputMethodManager) activity
-                .getSystemService(Activity.INPUT_METHOD_SERVICE);
+                .getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 

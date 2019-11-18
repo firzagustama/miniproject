@@ -21,6 +21,7 @@ import android.os.Bundle;
 
 import com.mindorks.framework.mvp.R;
 import com.mindorks.framework.mvp.ui.base.BaseActivity;
+import com.mindorks.framework.mvp.ui.home.HomeActivity;
 import com.mindorks.framework.mvp.ui.login.LoginActivity;
 import com.mindorks.framework.mvp.ui.main.MainActivity;
 
@@ -68,6 +69,13 @@ public class SplashActivity extends BaseActivity implements SplashMvpView {
     @Override
     public void openMainActivity() {
         Intent intent = MainActivity.getStartIntent(SplashActivity.this);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void openHomeActivity() {
+        Intent intent = HomeActivity.getStartIntent(SplashActivity.this);
         startActivity(intent);
         finish();
     }
