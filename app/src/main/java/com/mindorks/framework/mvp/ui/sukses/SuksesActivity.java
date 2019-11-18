@@ -75,7 +75,7 @@ public class SuksesActivity extends BaseActivity implements SuksesMvpView {
         isKredit = getIntent().getBooleanExtra("kredit", false);
 
         if (isKredit) {
-            statusView.setText("Pengajuan Kredit Berhasil");
+            statusView.setText("Menunggu Proses Verifikasi, Harap Tunggu 1x24 Jam Kerja");
             hargaView.setText("Rp. 13.000.000");
             kreditContainer.setVisibility(View.VISIBLE);
             angsuranContainer.setVisibility(View.GONE);
@@ -92,8 +92,8 @@ public class SuksesActivity extends BaseActivity implements SuksesMvpView {
     }
 
     @OnClick(R.id.btnSelesai)
-    protected void openHomeActivity() {
-        Intent intent = VerifikasiKreditActivity.getStartIntent(this);
+    protected void openNextActivity() {
+        Intent intent = isKredit ? VerifikasiKreditActivity.getStartIntent(this) : HomeActivity.getStartIntent(this);
         startActivity(intent);
         finish();
     }
