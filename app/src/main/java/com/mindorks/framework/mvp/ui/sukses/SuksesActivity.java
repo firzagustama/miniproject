@@ -76,14 +76,14 @@ public class SuksesActivity extends BaseActivity implements SuksesMvpView {
 
         if (isKredit) {
             statusView.setText("Menunggu Proses Verifikasi, Harap Tunggu 1x24 Jam Kerja");
-            hargaView.setText("Rp. 13.000.000");
+            hargaView.setText("Rp. 10.000.000");
             kreditContainer.setVisibility(View.VISIBLE);
             angsuranContainer.setVisibility(View.GONE);
             titleView.setText("Kredit");
             imageView.setImageResource(R.drawable.loading);
         } else {
             statusView.setText("Pembayaran Angsuran Berhasil");
-            hargaView.setText("Rp. 750.000");
+            hargaView.setText("Rp. 1.670.000");
             kreditContainer.setVisibility(View.GONE);
             angsuranContainer.setVisibility(View.VISIBLE);
             titleView.setText("Angsuran");
