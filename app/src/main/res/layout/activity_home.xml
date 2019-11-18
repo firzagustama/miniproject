@@ -157,14 +157,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="3"
+                    android:weightSum="2"
                     android:padding="16dp"
                     android:gravity="center">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:src="@drawable/ic_gold"
                         android:tint="@color/colorPrimary"/>
                     <RelativeLayout
@@ -192,14 +192,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="3"
+                    android:weightSum="2"
                     android:padding="16dp"
                     android:gravity="center">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:src="@drawable/ic_ring"
                         android:tint="@color/colorPrimary"/>
                     <RelativeLayout
@@ -228,14 +228,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="3"
+                    android:weightSum="2"
                     android:padding="16dp"
                     android:gravity="center">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:src="@drawable/ic_shopping_bag"
                         android:tint="@color/colorPrimary"/>
                     <RelativeLayout
@@ -263,14 +263,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="3"
+                    android:weightSum="2"
                     android:padding="16dp"
                     android:gravity="center">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:src="@drawable/ic_store"
                         android:tint="@color/colorPrimary"/>
                     <RelativeLayout
@@ -298,14 +298,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="3"
+                    android:weightSum="2"
                     android:padding="16dp"
                     android:gravity="center">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:src="@drawable/ic_golden"
                         android:tint="@color/colorPrimary"/>
                     <RelativeLayout
@@ -334,14 +334,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:weightSum="3"
+                    android:weightSum="2"
                     android:padding="16dp"
                     android:gravity="center">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
+                        android:layout_weight="1"
                         android:src="@drawable/ic_payment_method"
                         android:tint="@color/colorPrimary"/>
 

@@ -41,14 +41,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/ic_gold_ingots"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -73,14 +73,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/ic_cash"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -105,14 +105,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/ic_debit_card"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -137,14 +137,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/ic_smartphone"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -169,14 +169,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/bpjs"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -201,14 +201,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/pln"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -233,14 +233,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/ic_drop"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -265,14 +265,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/telkom"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -298,14 +298,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="vertical"
                 android:padding="16dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:src="@drawable/ic_bags"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
