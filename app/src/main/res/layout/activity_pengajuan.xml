@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/label_qty"
                 android:id="@+id/harga_barang"
-                android:text="Rp. 5.000.000"
+                android:text="Rp. 10.000.000"
                 android:textColor="@android:color/black"
                 android:textSize="14sp"
                 android:layout_toEndOf="@+id/img_product"
@@ -268,7 +268,7 @@
                         android:textSize="18sp" />
                     <TextView
                         android:id="@+id/jumlah_dp"
-                        tools:text="Rp. 5.000.000"
+                        android:text="Rp. 3.000.000"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:textAlignment="textEnd"
@@ -282,7 +282,7 @@
                         android:textSize="18sp" />
                     <TextView
                         android:id="@+id/jumlah_angsuran"
-                        tools:text="Rp. 5.00.000"
+                        android:text="Rp. 750.000"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:textAlignment="textEnd"

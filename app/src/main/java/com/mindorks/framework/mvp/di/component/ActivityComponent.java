@@ -36,6 +36,7 @@ import com.mindorks.framework.mvp.ui.rincian.RincianActivity;
 import com.mindorks.framework.mvp.ui.splash.SplashActivity;
 import com.mindorks.framework.mvp.ui.sukses.SuksesActivity;
 import com.mindorks.framework.mvp.ui.tagihan.TagihanActivity;
+import com.mindorks.framework.mvp.ui.verifikasikredit.VerifikasiKreditActivity;
 
 import dagger.Component;
 
@@ -85,4 +86,5 @@ public interface ActivityComponent {
 
     void inject(PengajuanActivity activity);
 
+    void inject(VerifikasiKreditActivity activity);
 }

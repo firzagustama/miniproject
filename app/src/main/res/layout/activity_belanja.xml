@@ -8,6 +8,7 @@
     android:background="@color/abuGade">
 
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="@dimen/activity_vertical_margin">
@@ -32,6 +33,7 @@
         app:strokeColor="#FF777777"
         app:strokeWidth="1dp"
         android:layout_margin="16dp"
+        android:layout_below="@+id/appBar"
         />
 
     <EditText
