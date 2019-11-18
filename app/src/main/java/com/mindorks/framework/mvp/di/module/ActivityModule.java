@@ -83,6 +83,9 @@ import com.mindorks.framework.mvp.ui.sukses.SuksesPresenter;
 import com.mindorks.framework.mvp.ui.tagihan.TagihanMvpPresenter;
 import com.mindorks.framework.mvp.ui.tagihan.TagihanMvpView;
 import com.mindorks.framework.mvp.ui.tagihan.TagihanPresenter;
+import com.mindorks.framework.mvp.ui.verifikasikredit.VerifikasiKreditMvpPresenter;
+import com.mindorks.framework.mvp.ui.verifikasikredit.VerifikasiKreditMvpView;
+import com.mindorks.framework.mvp.ui.verifikasikredit.VerifikasiKreditPresenter;
 import com.mindorks.framework.mvp.utils.rx.AppSchedulerProvider;
 import com.mindorks.framework.mvp.utils.rx.SchedulerProvider;
 
@@ -272,5 +275,12 @@ public class ActivityModule {
     @Provides
     LinearLayoutManager provideLinearLayoutManager(AppCompatActivity activity) {
         return new LinearLayoutManager(activity);
+    }
+
+    @Provides
+    @PerActivity
+    VerifikasiKreditMvpPresenter<VerifikasiKreditMvpView> provideVerifikasiKreditPresenter(
+            VerifikasiKreditPresenter<VerifikasiKreditMvpView> presenter) {
+        return presenter;
     }
 }

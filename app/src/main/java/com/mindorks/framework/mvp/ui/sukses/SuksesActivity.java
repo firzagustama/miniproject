@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import com.mindorks.framework.mvp.R;
 import com.mindorks.framework.mvp.ui.home.HomeActivity;
+import com.mindorks.framework.mvp.ui.verifikasikredit.VerifikasiKreditActivity;
 
 public class SuksesActivity extends BaseActivity implements SuksesMvpView {
 
@@ -92,7 +93,7 @@ public class SuksesActivity extends BaseActivity implements SuksesMvpView {
 
     @OnClick(R.id.btnSelesai)
     protected void openHomeActivity() {
-        Intent intent = HomeActivity.getStartIntent(this);
+        Intent intent = VerifikasiKreditActivity.getStartIntent(this);
         startActivity(intent);
         finish();
     }

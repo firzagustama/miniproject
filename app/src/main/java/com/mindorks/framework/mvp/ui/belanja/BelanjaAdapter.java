@@ -14,6 +14,8 @@ public class BelanjaAdapter extends FragmentPagerAdapter {
 
     final String[] tabTitle = {"Riwayat", "Tagihan"};
 
+    public static int PAGE_COUNT = 2;
+
     public BelanjaAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -32,6 +34,11 @@ public class BelanjaAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return tabTitle.length;
+        return PAGE_COUNT;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return tabTitle[position];
     }
 }
