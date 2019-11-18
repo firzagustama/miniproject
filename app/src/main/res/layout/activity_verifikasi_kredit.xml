@@ -7,6 +7,22 @@
     android:layout_height="match_parent"
     android:background="@color/abuGade">
 
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Belanja"/>
+
+    </android.support.design.widget.AppBarLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -124,7 +140,7 @@
             <TextView
                 android:id="@+id/angsuran"
                 android:layout_height="wrap_content"
-                android:text="Rp. 750.000"
+                android:text="Rp. 750000"
                 android:textColor="@android:color/black"
                 android:textSize="18dp"
                 android:layout_width="wrap_content"
