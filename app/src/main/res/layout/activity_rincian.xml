@@ -171,11 +171,11 @@
                     <TextView
                         android:id="@+id/tanggal_pembayaran"
                         android:textAlignment="center"
-                        android:text="12/09/19"
+                        android:text="12/01/19"
                         />
                     <TextView
                         android:id="@+id/nilai_pembayaran"
-                        android:text="Rp. 750.000"
+                        android:text="Rp. 1.670.000"
                         android:textAlignment="textEnd"
                         android:layout_gravity="end"
                         />
@@ -189,11 +189,11 @@
                     <TextView
                         android:id="@+id/tanggal_pembayaran2"
                         android:textAlignment="center"
-                        android:text="12/10/19"
+                        android:text="12/02/19"
                         />
                     <TextView
                         android:id="@+id/nilai_pembayaran2"
-                        android:text="Rp. 750.000"
+                        android:text="Rp. 1.670.000"
                         android:textAlignment="textEnd"
                         android:layout_gravity="end"
                         />
@@ -207,11 +207,56 @@
                     <TextView
                         android:id="@+id/tanggal_pembayaran3"
                         android:textAlignment="center"
-                        android:text="12/11/19"
+                        android:text="12/03/19"
                         />
                     <TextView
                         android:id="@+id/nilai_pembayaran3"
-                        android:text="Rp. 750.000"
+                        android:text="Rp. 1.670.000"
+                        android:textAlignment="textEnd"
+                        android:layout_gravity="end"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Bulan 4"
+                        android:width="250px"
+                        />
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="12/04/19"
+                        />
+                    <TextView
+                        android:text="Rp. 1.670.000"
+                        android:textAlignment="textEnd"
+                        android:layout_gravity="end"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Bulan 5"
+                        android:width="250px"
+                        />
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="12/05/19"
+                        />
+                    <TextView
+                        android:text="Rp. 1.670.000"
+                        android:textAlignment="textEnd"
+                        android:layout_gravity="end"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Bulan 6"
+                        android:width="250px"
+                        />
+                    <TextView
+                        android:textAlignment="center"
+                        android:text="12/06/19"
+                        />
+                    <TextView
+                        android:text="Rp. 1.670.000"
                         android:textAlignment="textEnd"
                         android:layout_gravity="end"
                         />

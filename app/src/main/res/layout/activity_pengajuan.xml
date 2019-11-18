@@ -290,7 +290,7 @@
                         android:textSize="18sp" />
                     <TextView
                         android:id="@+id/jumlah_angsuran"
-                        android:text="Rp. 750.000"
+                        android:text="Rp. 1.670.000"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:textAlignment="textEnd"
